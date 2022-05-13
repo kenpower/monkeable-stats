@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(250, 116, 92);
+    background: linear-gradient(66deg, rgba(250, 116, 92, 1) 0%, rgba(154, 226, 90, 1) 100%);
+
+}
+
+#avatar {
+    border-radius: 50%;
+    display: block;
+    border: 5px solid #fff;
+    width: 150px;
+    height: 150px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#subsCount,
+#viewsCount {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.subsLabel,
+.viewsLabel,
+.channelName {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.channelName {
+    font-size: 5em;
+    font-weight: 500;
+    font-family: 'Osaka-Sans Serif', sans-serif;
+}
+
+div.ytd-logo {
+    height: 20px;
+    width: 90px;
+    padding: 18px 14px 18px 16px;
+    max-width: 120px;
+    max-height: 56px;
+}

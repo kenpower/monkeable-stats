@@ -47,11 +47,17 @@
 
         function getAPIKey() {
 
-        if (typeof API_KEY === "undefined") {
-            const searchParams = new URLSearchParams(location.search);
-            if (searchParams.has('API_KEY')) {
-                API_KEY = searchParams.get('API_KEY');
-            }
+            if (typeof API_KEY === "undefined") {
+
+                if (typeof URLSearchParams === "undefined")
+                    API_KEY = window.location.href.split("=")[1];
+                else {
+
+                    const searchParams = new URLSearchParams(location.search);
+                    if (searchParams.has('API_KEY')) {
+                        API_KEY = searchParams.get('API_KEY');
+                    }
+                }
         }
 
 

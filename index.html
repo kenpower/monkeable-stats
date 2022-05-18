@@ -4,8 +4,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 <script>
 
-
-    const eid = (id) => document.getElementById(id);
+        //need old style to support old IE
+        function eid(id) { return document.getElementById(id) };
 
     function displayStats(channel) {
         console.log("Stats:", channel);
@@ -63,8 +63,9 @@
                 
     gapi.load('client', start);
 
+        function reload() { window.location.reload() };
         setInterval(execute, 10000);
-        setInterval(() => window.location.reload(), 100000);
+            setInterval(reload, 100000);
 
 </script>
 <body>

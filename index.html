@@ -45,20 +45,20 @@
                 function (err) { console.error("Execute error", err); });
     }
 
-                    const getAPIKey = () => {
+        function getAPIKey() {
 
-                        if (typeof API_KEY === "undefined") {
-                            const searchParams = new URLSearchParams(location.search);
-                            if (searchParams.has('API_KEY')) {
-                                API_KEY = searchParams.get('API_KEY');
-                            }
-                        }
+        if (typeof API_KEY === "undefined") {
+            const searchParams = new URLSearchParams(location.search);
+            if (searchParams.has('API_KEY')) {
+                API_KEY = searchParams.get('API_KEY');
+            }
+        }
 
 
-                        if (typeof API_KEY === "undefined")
-                            alert("Need api key in query string, http://localhost:8000/?API_KEY=XXXXXXXX");
-                        return API_KEY;
-                    }
+        if (typeof API_KEY === "undefined")
+            alert("Need api key in query string, http://localhost:8000/?API_KEY=XXXXXXXX");
+        return API_KEY;
+    }
 
                 
     gapi.load('client', start);

@@ -3,15 +3,15 @@ body {
     background: rgb(250, 116, 92);
     background: linear-gradient(66deg, rgba(250, 116, 92, 1) 0%, rgba(154, 226, 90, 1) 100%);
 
-
+    font-size: 24px;
 }
 
 #avatar {
     border-radius: 50%;
     display: block;
     border: 5px solid #fff;
-    width: 150px;
-    height: 150px;
+    width: 16rem;
+        height: 16rem;
 
 }
 

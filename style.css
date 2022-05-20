@@ -3,6 +3,7 @@ body {
     background: rgb(250, 116, 92);
     background: linear-gradient(66deg, rgba(250, 116, 92, 1) 0%, rgba(154, 226, 90, 1) 100%);
 
+
 }
 
 #avatar {
@@ -18,6 +19,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+        height: 100%;
 }
 
 .statsGrid {
